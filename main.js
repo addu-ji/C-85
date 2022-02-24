@@ -7,8 +7,8 @@ greencar_height=100;
 background_image = "parkingLot.jpg";
 greencar_image = "car2.png";
 
-greencar_x=5;
-greencar_y=225;
+greencar_x=75;
+greencar_y=325;
 
 function add() {
 	background_imgTag=new Image();
@@ -66,20 +66,20 @@ function up()
 	if(greencar_y>=0)
     {
         greencar_y=greencar_y-10;
-        console.log("when up arrow key is pressed, x= " + greencar_x + " | y"+greencar_y)
+        console.log("when up arrow key is pressed, x= " + greencar_x + " | y"+greencar_y);
         uploadBackground();
-        uploadrover();
+        uploadgreencar();
     }
 }
 
 function down()
 {
-    if(greencar_y<=500)
+    if(greencar_y<=350)
     {
         greencar_y=greencar_y+10;
-        console.log("when up down key is pressed, x= " + greencar_x + " | y"+greencar_y)
+        console.log("when up down key is pressed, x= " + greencar_x + " | y"+greencar_y);
         uploadBackground();
-        uploadrover();
+        uploadgreencar();
     }
 }
 
@@ -88,20 +88,20 @@ function left()
     if(greencar_x>=0)
     {
         greencar_x=greencar_x-10;
-        console.log("when up left key is pressed, x= " + greencar_x + " | y"+greencar_y)
+        console.log("when up left key is pressed, x= " + greencar_x + " | y"+greencar_y);
         uploadBackground();
-        uploadrover();
+        uploadgreencar();
     }
 }
 
 function right()
 {
-    if(greencar_x<=700)
+    if(greencar_x<=750)
     {
         greencar_x=greencar_x+10;
-        console.log("when right arrow key is pressed, x= " + greencar_x + " | y"+greencar_y)
+        console.log("when right arrow key is pressed, x= " + greencar_x + " | y"+greencar_y);
         uploadBackground();
-        uploadrover();
+        uploadgreencar();
     }
 }
 
